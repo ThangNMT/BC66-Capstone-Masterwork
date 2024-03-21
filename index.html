@@ -29,11 +29,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-
   <body id="myBody">
     <header
       class="position-fixed top-0 start-0 end-0 grid align-items-center h-auto z-2"
@@ -248,13 +252,26 @@
             </p>
             <a href="#about" class="btn btn-primary theme-button"> Read More</a>
           </div>
-          <div class="col-lg-7 col-md-7 col-sm-12 col-12 text-end">
-            <img class="w-75 about__img shadow" src="img/about.jpg" alt="" />
+          <div
+            class="col-lg-7 col-md-7 col-sm-12 col-12 text-lg-end text-md-end text-center"
+          >
+            <img
+              class="w-75 about__img shadow d-lg-block d-md-block d-none"
+              src="img/about.jpg"
+              alt=""
+            />
+            <img
+              class="w-100 about__img shadow d-lg-none d-md-none d-block mt-3"
+              src="img/about.jpg"
+              alt=""
+            />
           </div>
-          <div class="pb-5 pt-4">
+          <div class="pb-4 pt-4">
             <div class="pb-lg-3 pt-5">
               <div class="justify-content-center row">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  class="col-lg-4 col-md-6 col-sm-6 col-12 py-lg-0 py-md-0 py-3"
+                >
                   <div class="stats__info">
                     <h4>Happy Customers</h4>
                     <p class="counter">10458</p>
@@ -264,7 +281,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  class="col-lg-4 col-md-6 col-sm-6 col-12 py-lg-0 py-md-0 py-3"
+                >
                   <div class="stats__info">
                     <h4>Winning Awards</h4>
                     <p class="counter">890</p>
@@ -274,7 +293,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div
+                  class="col-lg-4 col-md-6 col-sm-6 col-12 py-lg-0 py-md-5 py-3"
+                >
                   <div class="stats__info">
                     <h4>Completed Projects</h4>
                     <p class="counter">5345</p>
@@ -325,17 +346,72 @@
             sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-5 col-md-5 col-12 question__img mt-5">
-            <img class="img-fluid" src="img/women.jpg" alt="" />
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-6 col-12 question__img mt-5">
+            <img class="img-fluid img_tablet" src="img/women.jpg" alt="" />
           </div>
-          <div class="col-lg-7 col-md-5 col-12">
+          <div class="col-lg-7 col-md-6 col-12 mt-5">
             <div class="question__list">
               <ul class="question__list-ul">
-                <li class="accordion_question">
+                <li class="accordion_question mb-4">
                   <input type="checkbox" checked="" />
                   <i></i>
                   <h2>There are many passages but the majority?</h2>
+                  <p class="mb-0 panel">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li class="accordion_question mb-4">
+                  <input type="checkbox" checked="" />
+                  <i></i>
+                  <h2>Sed ut perspiciatis unde omnis?</h2>
+                  <p class="mb-0 panel">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li class="accordion_question mb-4">
+                  <input type="checkbox" checked="" />
+                  <i></i>
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
+                  <p class="mb-0 panel">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li class="accordion_question mb-4">
+                  <input type="checkbox" checked="" />
+                  <i></i>
+                  <h2>We denounce with righteous?</h2>
+                  <p class="mb-0 panel">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li class="accordion_question mb-4">
+                  <input type="checkbox" checked="" />
+                  <i></i>
+                  <h2>perspiciatis unde omnis?</h2>
+                  <p class="mb-0 panel">
+                    Voluptates amet earum velit nobis aliquam laboriosam nihil
+                    debitis facere voluptatibus consectetur quae quasi fuga, ad
+                    corrupti libero omnis sapiente non assumenda, incidunt
+                    officiis eaque iste minima autem.
+                  </p>
+                </li>
+                <li class="accordion_question mb-4">
+                  <input type="checkbox" checked="" />
+                  <i></i>
+                  <h2>At vero eos iusto odio ducimus qui?</h2>
                   <p class="mb-0 panel">
                     Voluptates amet earum velit nobis aliquam laboriosam nihil
                     debitis facere voluptatibus consectetur quae quasi fuga, ad
@@ -360,7 +436,7 @@
             sodales quis. Integer sit amet mattis quam.
           </p>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 d-lg-flex d-md-none d-none">
           <div class="col-lg-10 col-md-10 col-10 mx-auto">
             <ul class="nav nav-tabs">
               <li class="nav-item">
@@ -469,6 +545,144 @@
             </div>
           </div>
         </div>
+        <div class="row mt-5 d-lg-none d-md-flex d-flex">
+          <div class="col-lg-10 mx-auto">
+            <!--Horizontal Tab-->
+            <div>
+              <div
+                class="resp-tabs-container hor_1"
+                style="border-color: rgb(193, 193, 193)"
+              >
+                <h2
+                  class="resp-accordion hor_1 active_toggle"
+                  role="tab"
+                  aria-controls="hor_1_tab_item-0"
+                  style="
+                    background: none rgb(245, 245, 245);
+                    border-color: rgb(193, 193, 193);
+                  "
+                >
+                  <span class="resp-arrow"></span> Project One
+                </h2>
+                <div
+                  class="products-content resp-tab-content hor_1 resp-tab-content-active resp-accordion-closed"
+                  aria-labelledby="hor_1_tab_item-0"
+                  style="display: none"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>Why a visual identity system is more memorable</h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
+                      </p>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                      >
+                        Know more</a
+                      >
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <img
+                        src="img/b4.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <h2
+                  class="resp-accordion hor_1 active_toggle"
+                  role="tab"
+                  aria-controls="hor_1_tab_item-1"
+                  style="
+                    background-color: rgb(245, 245, 245);
+                    border-color: rgb(193, 193, 193);
+                  "
+                >
+                  <span class="resp-arrow"></span> Project Two
+                </h2>
+                <div
+                  class="products-content resp-tab-content hor_1 active_toggle"
+                  aria-labelledby="hor_1_tab_item-1"
+                  style="border-color: rgb(193, 193, 193)"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <img
+                        src="img/b5.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <h3>Make website that looks Lorem, ipsum dolor.</h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
+                      </p>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                      >
+                        Know more</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <h2
+                  class="resp-accordion hor_1 active_toggle"
+                  role="tab"
+                  aria-controls="hor_1_tab_item-2"
+                  style="
+                    background-color: rgb(245, 245, 245);
+                    border-color: rgb(193, 193, 193);
+                  "
+                >
+                  <span class="resp-arrow"></span> Project Three
+                </h2>
+                <div
+                  class="products-content resp-tab-content hor_1"
+                  aria-labelledby="hor_1_tab_item-2"
+                  style="border-color: rgb(193, 193, 193)"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3>Why a visual identity system is more memorable</h3>
+                      <p>
+                        Lorem ipsum dolor sit, adipisicing elit repudiandae
+                        perferendis dolores praesentium nulla quibusdam
+                        repellendus. consequatur minus aliquam corrupti
+                        blanditiis, necessitatibus consectetur modi ipsum natus
+                        accusantium sit pariatur.
+                      </p>
+                      <a
+                        href="#url"
+                        class="btn btn-outline-primary theme-button mt-3"
+                      >
+                        Know more</a
+                      >
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-5">
+                      <img
+                        src="img/b6.jpg"
+                        class="img-fluid img-curve"
+                        alt="project image"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
@@ -519,18 +733,30 @@
     });
   </script>
   <!-- question accordion -->
-  <script>
+  <!-- <script>
     var acc = document.querySelector(".accordion_question");
     var i;
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "100%";
-        }
+        // this.classList.toggle("active");
+        // var panel = this.nextElementSibling;
+        // if (panel.style.maxHeight) {
+        //   panel.style.maxHeight = null;
+        // } else {
+        //   panel.style.maxHeight = panel.scrollHeight + "100%";
+        // }
+        console.log(acc[i]);
+      });
+    }
+  </script> -->
+  <script>
+    var hienThi = document.getElementsByClassName("active_toggle");
+    var noiDung = document.getElementsByClassName("resp-accordion");
+    var i;
+    for (i = 0; i < hienThi.length; i++) {
+      hienThi[i].addEventListener("click", function () {
+        this.nextElementSibling.classList.toggle("active_hien");
+        this.classList.toggle("them");
       });
     }
   </script>
