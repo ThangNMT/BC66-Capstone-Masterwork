@@ -505,7 +505,7 @@ a {
 /* PERFORM */
 .perform {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)),
-        url(../img/bg.jpg);
+        url(./assets/img/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center;
@@ -1952,4 +1952,31 @@ a {
     .footer-left p {
         text-align: center;
     }
+}
+
+/* accordion bo sung */
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color:unset;
+    border: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: unset;
+    outline: 0;
+    box-shadow: unset;
+}
+.btn-close{
+    --bs-btn-close-bg:unset;
+}
+.close{
+    position: absolute;
+    right: -20px;
+    top: -50px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+
 }
