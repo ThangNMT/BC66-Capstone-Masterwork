@@ -5,16 +5,14 @@ window.addEventListener("scroll", function (e) {
   if (scrollY >= headerHeight) {
     header && header.classList.add("nav-fixed");
     document.body.style.paddingTop = `${headerHeight}px`;
-    // if (header) {
-    //   header.classList.add("is-fixed");
-    // }
+
   } else {
     header && header.classList.remove("nav-fixed");
     document.body.style.paddingTop = 0;
   }
 });
 
-// LÀM NÚT MŨI TÊN CỦA ACCORDION
+// Make arrow ACCORDION
 
 const accordionButtonEl = document.querySelectorAll(".accordion-button");
 [...accordionButtonEl].forEach((item) =>
@@ -25,12 +23,11 @@ function handleClick(e) {
   accordionItem.classList.toggle("active");
 }
 
-// BACK TO TOP
-// Get the button
+// button Back to Top
 let mybutton = document.getElementById("backToTop");
 mybutton.addEventListener("click", topFunction);
 
-// When the user scrolls down 20px from the top of the document, show the button
+//show the button at the end
 window.onscroll = function () {
   scrollFunction();
 };
@@ -43,16 +40,16 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// back to Top when click
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
-// DARK MODE
+// DARK MODE for web
 const themeColor = document.querySelector(".theme-color");
 const themeMoon = document.querySelector(".theme-moon");
-// const themeSun = document.querySelector(".theme-sun");
+
 themeColor.addEventListener("click", handleTheme);
 function handleTheme(e) {
   document.body.classList.toggle("dark");
@@ -60,7 +57,7 @@ function handleTheme(e) {
   themeMoon.classList.toggle("fa-sun");
 }
 
-// CHANGE ICON
+// Icon
 const iconMobile = document.querySelector(".mini-icon");
 iconMobile.addEventListener("click", (e) => {
   e.target.classList.toggle("fa-bars");
