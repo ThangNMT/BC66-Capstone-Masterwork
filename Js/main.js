@@ -63,3 +63,17 @@ iconMobile.addEventListener("click", (e) => {
   e.target.classList.toggle("fa-bars");
   e.target.classList.toggle("fa-xmark");
 });
+
+
+// question
+
+var hienThi = document.getElementsByClassName("active_toggle");
+var noiDung = document.getElementsByClassName("resp-accordion");
+var i;
+for (i = 0; i < hienThi.length; i++) {
+  hienThi[i].addEventListener("click", function () {
+    this.nextElementSibling.classList.toggle("active_hien");
+    this.classList.toggle("them");
+  });
+}
+    
